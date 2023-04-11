@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import DisplayCounter from "./DisplayCounter";
 
 function App() {
+  // defining state
+  const [number, setNumber] = useState(0);
+
+  function increment() {
+    console.log("incrementing");
+    setNumber(number + 1);
+    // console.log(number);
+    // setNumber(number + 3);
+    // console.log(number);
+    // setNumber((prev) => {
+    //   console.log(prev);
+    //   return prev + 1;
+    // });
+  }
+
+  function decrement() {
+    console.log("decrementing");
+    setNumber(number - 1);
+  }
+
+  // setNumber(1)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{number}</h1>
+      <button onClick={decrement}>-</button>
+      <button onClick={increment}>+</button>
+
+      <br></br>
+      <DisplayCounter counter={number}></DisplayCounter>
     </div>
   );
 }
