@@ -4,7 +4,7 @@ function PokemonDetail({ name, image }) {
   console.log(name, image);
   return (
     <div>
-      <img src={image}></img>
+      <img height={250} src={image}></img>
       <p>{name}</p>
     </div>
   );

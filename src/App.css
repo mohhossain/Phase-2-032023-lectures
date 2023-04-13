@@ -1,7 +1,17 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 p{
   color: rgb(238, 144, 144)
+}
+
+.pokemon-detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
