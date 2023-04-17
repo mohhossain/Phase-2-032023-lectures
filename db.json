@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple iPhone 13",
+      "category": "Electronics",
+      "price": 999,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pink-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315935",
+      "isSold": false
+    },
+    {
+      "id": 2,
+      "name": "Amazon Echo Dot",
+      "category": "Electronics",
+      "price": 49,
+      "image": "https://mobileimages.lowes.com/productimages/045c59c0-f0da-42ea-8d5b-4fbe3734579c/11398707.jpg?size=pdhism",
+      "isSold": true
+    },
+    {
+      "id": 3,
+      "name": "Levi's 501 Original Fit Jeans",
+      "category": "Clothing",
+      "price": 69,
+      "image": "https://m.media-amazon.com/images/I/913fQp-qCNL._AC_UY1000_.jpg",
+      "isSold": false
+    },
+    {
+      "id": 5,
+      "name": "Starbucks French Roast Whole Bean Coffee",
+      "category": "Food & Beverages",
+      "price": 12,
+      "image": "https://athome.starbucks.com/sites/default/files/2022-05/CAH_PDP_French_1842x1542_Whole_shadow.png",
+      "isSold": false
+    }
+  ]
+}
