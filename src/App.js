@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect, createContext } from "react";
+import Container from "./Container";
+import MyProvider from "./MyProvider";
+import NewDogForm from "./NewDogForm";
 
 function App() {
+  // fetch http://localhost:3000/dogs in useEffect and set the data in state
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyProvider>
+        <Container></Container>
+        <NewDogForm></NewDogForm>
+      </MyProvider>
     </div>
   );
 }
